@@ -25,14 +25,21 @@ cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ### mysql-backupall.sh ###
 **Preparation:**<br>
 You should create a backup user that only has read priviledges.<br>
-Find these lines in mysql-backupall.sh:
+```
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
+GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
+```
+if you use this way, then change root to jeffrey:
 ```
 USER=root
+```
+Find this line in mysql-backupall.sh:
+```
 PASSWORD=
 ```
 set the PASSWORD value, for example:
 ```
-PASSWORD=SuperSecret1!&23Pass
+PASSWORD=mytemporarypassword
 ```
 do not copy the example, set your own PASSWORD
 
