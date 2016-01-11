@@ -66,7 +66,7 @@ xen-backupall.sh \<DIRECTORY>
 License
 -------
 
-Copyright (C) 2016 [ZeyOS, Inc.](http://www.zeyos.com)
+Copyright © 2016 [ZeyOS, Inc.](http://www.zeyos.com)
 
 This work is licensed under the Massachusetts Institute of Technology License ([MIT](http://opensource.org/licenses/MIT)).
 
