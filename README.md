@@ -29,11 +29,11 @@ do not copy the example, set your own PASSWORD
 shell>mysql-backupall.sh <DIRECTORY>
 ```
 **Examples:**<br>
-*relative path:*
+*using the relative path:*
 ```
 ./mysql-backupall.sh ~/dirForDumps
 ```
-*absloute path:*
+*using the absloute path:*
 ```
 /home/userName/backuputils/mysql-backupall.sh  /home/userName/dirForDumps
 ```
@@ -43,11 +43,11 @@ shell>mysql-backupall.sh <DIRECTORY>
 shell>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ```
 **Examples:**<br>
-*relative path:*
+*using the relative path:*
 ```
 ./cleanup.sh 5 mydb.sql ~/dirWithDumps
 ```
-*absloute path:*
+*using the absloute path:*
 ```
 /home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
 ```
