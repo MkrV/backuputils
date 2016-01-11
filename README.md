@@ -3,7 +3,10 @@ Backup Utility Scripts
 
 Purpose
 -------
-
+MySQL Backup Script Creates a backup for all MySQL databases.
+Cleanup script Removes the last n files from a directory listing.
+MySQL Backup Cleanup Cleans old MySQL dumps.
+Xen backup script creates a live snapshot for each virtual machine.
 
 Scripts
 ------
