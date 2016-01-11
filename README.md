@@ -25,9 +25,9 @@ PASSWORD=mytemporarypassword
 do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
-```
-shell>mysql-backupall.sh <DIRECTORY>
-```
+
+<b>shell></b>mysql-backupall.sh <DIRECTORY>
+
 **Examples:**<br>
 *using the relative path:*
 ```
@@ -39,9 +39,9 @@ shell>mysql-backupall.sh <DIRECTORY>
 ```
 ### cleanup.sh ###
 **Usage:**<br>
-```
-shell>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
-```
+
+<b>shell></b>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
+
 **Examples:**<br>
 *using the relative path:*
 ```
@@ -53,15 +53,12 @@ shell>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ```
 ### mysql-cleanupall.sh ###
 Usage:<br>
-```
-shell>mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
-```
+<b>shell></b>mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
+
 Documentation is currently in progress — thanks for your patience.
 ### xen-backup.sh ###
 Usage:<br>
-```
-shell>xen-backupall.sh \<DIRECTORY>
-```
+<b>shell></b>xen-backupall.sh \<DIRECTORY>
 
 License
 -------
