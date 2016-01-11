@@ -7,21 +7,6 @@ Purpose
 
 Scripts
 ------
-
-### cleanup.sh ###
-**Usage:**<br>
-```
-cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
-```
-**Examples:**<br>
-*relative path:*
-```
-./cleanup.sh 5 mydb.sql ~/dirWithDumps
-```
-*absloute path:*
-```
-/home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
-```
 ### mysql-backupall.sh ###
 **Preparation:**<br>
 You should create a backup user that only has read priviledges.<br>
@@ -56,6 +41,20 @@ mysql-backupall.sh <DIRECTORY>
 *absloute path:*
 ```
 /home/userName/backuputils/mysql-backupall.sh  /home/userName/dirForDumps
+```
+### cleanup.sh ###
+**Usage:**<br>
+```
+cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
+```
+**Examples:**<br>
+*relative path:*
+```
+./cleanup.sh 5 mydb.sql ~/dirWithDumps
+```
+*absloute path:*
+```
+/home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
 ```
 ### mysql-cleanupall.sh ###
 Usage:<br>
