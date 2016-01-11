@@ -14,7 +14,7 @@ You should create a backup user that only has read priviledges.<br>
 CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 ```
-if you use this way, then change the USER in mysql-backupall.sh:<br>
+if you will run the script not as root user, then change the USER in mysql-backupall.sh:<br>
 USER=<nobr>~~root~~<br>
 USER=jeffrey
 
