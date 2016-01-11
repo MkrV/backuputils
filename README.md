@@ -23,11 +23,19 @@ cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 /home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
 ```
 ### mysql-backupall.sh ###
-Usage:<br>
+**Usage:**<br>
 ```
 mysql-backupall.sh \<DIRECTORY>
 ```
-
+**Examples:**<br>
+*relative path:*
+```
+./mysql-backupall.sh ~/dirForDumps
+```
+*absloute path:*
+```
+/home/userName/backuputils/mysql-backupall.sh  /home/userName/dirForDumps
+```
 ### mysql-cleanupall.sh ###
 Usage:<br>
 ```
