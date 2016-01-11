@@ -29,10 +29,11 @@ You should create a backup user that only has read priviledges.<br>
 CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 ```
-if you use this way, then change root to jeffrey:
-```
-USER=root
-```
+if you use this way, then change the USER:<br>
+
+USER=<nobr>~~root~~<br>
+USER=jeffrey
+
 Find this line in mysql-backupall.sh:
 ```
 PASSWORD=
