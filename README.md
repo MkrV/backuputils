@@ -38,7 +38,7 @@ do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
 ```
-mysql-backupall.sh \<DIRECTORY>
+mysql-backupall.sh <DIRECTORY>
 ```
 **Examples:**<br>
 *relative path:*
