@@ -26,7 +26,7 @@ do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
 
-<b>shell></b>mysql-backupall.sh <DIRECTORY>
+<b>shell></b>mysql-backupall.sh \<DIRECTORY>
 
 **Examples:**<br>
 *using the relative path:*
@@ -40,7 +40,7 @@ do not copy the example, set your own PASSWORD
 ### cleanup.sh ###
 **Usage:**<br>
 
-<b>shell></b>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
+<b>shell></b>cleanup.sh \<LIMIT> \<BASENAME> \<DIRECTORY>
 
 **Examples:**<br>
 *using the relative path:*
@@ -53,7 +53,7 @@ do not copy the example, set your own PASSWORD
 ```
 ### mysql-cleanupall.sh ###
 Usage:<br>
-<b>shell></b>mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
+<b>shell></b>mysql-cleanupall.sh \<LIMIT> \<DIRECTORY>
 
 Documentation is currently in progress — thanks for your patience.
 ### xen-backup.sh ###
