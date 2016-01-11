@@ -11,8 +11,8 @@ Scripts
 **Preparation:**<br>
 You should create a backup user that only has read priviledges.<br>
 ```
-CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
-GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
+mysql>CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
+mysql>GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 ```
 if you will run the script not as root user, then change the USER in mysql-backupall.sh:<br>
 USER=<nobr>~~root~~<br>
@@ -26,7 +26,7 @@ do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
 ```
-mysql-backupall.sh <DIRECTORY>
+shell>mysql-backupall.sh <DIRECTORY>
 ```
 **Examples:**<br>
 *relative path:*
@@ -40,7 +40,7 @@ mysql-backupall.sh <DIRECTORY>
 ### cleanup.sh ###
 **Usage:**<br>
 ```
-cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
+shell>cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ```
 **Examples:**<br>
 *relative path:*
@@ -54,13 +54,13 @@ cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ### mysql-cleanupall.sh ###
 Usage:<br>
 ```
-mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
+shell>mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
 ```
 Documentation is currently in progress — thanks for your patience.
 ### xen-backup.sh ###
 Usage:<br>
 ```
-xen-backupall.sh \<DIRECTORY>
+shell>xen-backupall.sh \<DIRECTORY>
 ```
 
 License
