@@ -13,7 +13,7 @@ Scripts
 ### mysql-backupall.sh ###
 **Preparation:**<br>
 You should create a backup user that only has read priviledges.<br>
-```
+```sql
 mysql>CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 mysql>GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 ```
