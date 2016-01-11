@@ -54,11 +54,13 @@ Usage:<br>
 ```
 mysql-cleanupall.sh \<LIMIT> <DIRECTORY>
 ```
+Documentation is currently in progress - thanks for your patience.
 ### xen-backup.sh ###
 Usage:<br>
 ```
 xen-backupall.sh \<DIRECTORY>
 ```
+
 License
 -------
 
