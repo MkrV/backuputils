@@ -32,7 +32,7 @@ PASSWORD=
 ```
 set the PASSWORD value, for example:
 ```
-PASSWORD=SuperSecret123!&Password
+PASSWORD=SuperSecret1!&23Pass
 ```
 do not copy the example, set your own PASSWORD
 
