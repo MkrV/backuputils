@@ -29,10 +29,10 @@ if [ ! -d $DIR ]; then
 fi
 
 # List the databases
-DATABASES=$(mysql --user=${USER} --password=${PASS} -Bse 'show databases')
+DATABASES=$(mysql --user=${USER} --password=${PASSWORD} -Bse 'show databases')
 
 for DATABASE in $DATABASES; do
-  FILENAME=`date +"+%Y-%m-%d"`-${DATABASE}.sql
+  FILENAME=`date +"%Y-%m-%d"`-${DATABASE}.sql
   mysqldump --opt --user=${USER} --password=${PASSWORD} ${DATABASE} > ${DIR}/${FILENAME}
 done
 
