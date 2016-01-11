@@ -14,11 +14,11 @@ Usage:<br>
 cleanup.sh \<LIMIT> <BASENAME> <DIRECTORY>
 ```
 Examples:<br>
-relative path: 
+**relative path:**
 ```
 ./cleanup.sh 5 mydb.sql ~/dirWithDumps
 ```
-absloute path:
+**absloute path:**
 ```
 /home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
 ```
