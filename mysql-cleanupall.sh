@@ -41,7 +41,7 @@ fi
 DATABASES=$(mysql --user=${USER} --password=${PASSWORD} -Bse 'show databases')
 
 for DATABASE in $DATABASES; do
-  sh $BASEDIR/cleanup.sh $LIMIT $DATABASE $DIR
+  bash $BASEDIR/cleanup.sh $LIMIT $DATABASE $DIR
 done
 
 exit 0
