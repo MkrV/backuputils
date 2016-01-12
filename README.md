@@ -68,16 +68,17 @@ Usage:<br>
 /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 
-### cron.daily ###
+###  cronbackupdb ###
+once a day run both the scripts
 ```
-01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
+* * /1 * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
+* * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
-The above example will run /home/$USER/backuputils/mysql-backupall.sh at 4:01am on every day of every month. 
-```
-02 04 * * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
-```
-The example will run /home/$USER/backuputils/mysql-cleanupall.sh at 4:02am (1 minute later after the first command starts) on every day of every month. 
-
+<b>shell></b>crontab /home/$USER/backuputils/cronbackupdb
+Check if the script added:
+<b>shell></b>crontab -u $USER -l
+To delete a file, use the command crontab -r
+To edit: crontab -e
 ### xen-backup.sh ###
 Usage:<br>
 <b>shell></b>xen-backupall.sh \<DIRECTORY>
