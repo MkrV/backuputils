@@ -1,4 +1,0 @@
-# 4:01am on every day of every month.
-01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dbdump
-02 04 * * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
-# 4:02am (1 minute later after the first command starts) on every day of every month. 

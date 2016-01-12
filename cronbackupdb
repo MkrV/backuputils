@@ -1,0 +1,3 @@
+# once a day run both the scripts
+* * /1 * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
+* * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
