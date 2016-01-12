@@ -27,8 +27,7 @@ PASSWORD=mytemporarypassword
 do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
-<b>shell></b>mysql-backupall.sh <DIRECTORY>
-
+<pre><b>shell></b>mysql-backupall.sh &ltDIRECTORY&gt</pre>
 **Examples:**<br>
 *using the relative path:*
 ```
