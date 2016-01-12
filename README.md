@@ -68,7 +68,7 @@ Usage:<br>
 /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 
-### cron.d ###
+### cron.daily ###
 ```
 01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
 ```
