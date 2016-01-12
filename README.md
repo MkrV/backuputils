@@ -58,14 +58,31 @@ do not copy the example, set your own PASSWORD
 Usage:<br>
 <b>shell></b>mysql-cleanupall.sh \<LIMIT> \<DIRECTORY>
 
-Documentation is currently in progress — thanks for your patience.
+**Examples:**<br>
+*using the relative path:*
+```
+./mysql-cleanupall.sh 5 mydb.sql ~/dirWithDumps
+```
+*using the absloute path:*
+```
+/home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
+```
 
 ### cron.d ###
-
+```
+01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dbdump
+```
+The above example will run /home/$USER/backuputils/mysql-backupall.sh at 4:01am on every day of every month. 
+```
+02 04 * * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
+```
+The example will run /home/$USER/backuputils/mysql-cleanupall.sh at 4:02am (1 minute later after the first command starts) on every day of every month. 
 
 ### xen-backup.sh ###
 Usage:<br>
 <b>shell></b>xen-backupall.sh \<DIRECTORY>
+<br><br>
+Documentation is currently in progress — thanks for your patience.
 
 License
 -------
