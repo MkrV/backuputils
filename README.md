@@ -38,7 +38,7 @@ do not copy the example, set your own PASSWORD
 ```
 *using the absloute path:*
 ```
-/home/userName/backuputils/mysql-backupall.sh  /home/userName/dirForDumps
+/home/$USER/backuputils/mysql-backupall.sh  /home/$USER/dirForDumps
 ```
 ### cleanup.sh ###
 **Usage:**<br>
@@ -52,7 +52,7 @@ do not copy the example, set your own PASSWORD
 ```
 *using the absloute path:*
 ```
-/home/userName/backuputils/cleanup.sh 5 mydb.sql /home/userName/dirWithDumps
+/home/$USER/backuputils/cleanup.sh 5 mydb.sql /home/$USER/dirWithDumps
 ```
 ### mysql-cleanupall.sh ###
 Usage:<br>
