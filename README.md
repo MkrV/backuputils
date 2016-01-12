@@ -74,6 +74,7 @@ run both the scripts once a day
 * * /1 * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
 * * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
+Add the commands to the cron:
 <b>shell></b>crontab /home/$USER/backuputils/cronbackupdb<br>
 Check if the script is added:<br>
 <b>shell></b>crontab -u $USER -l<br>
