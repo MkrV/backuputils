@@ -39,7 +39,7 @@ do not copy the example, set your own PASSWORD
 ```
 ### cleanup.sh ###
 **Usage:**<br>
-<b>shell></b>cleanup.sh \<LIMIT> \<BASENAME> \<DIRECTORY>
+<pre><b>shell></b>cleanup.sh &ltLIMIT&gt &ltBASENAME&gt &ltDIRECTORY&gt</pre>
 
 **Examples:**<br>
 *using the relative path:*
@@ -52,7 +52,7 @@ do not copy the example, set your own PASSWORD
 ```
 ### mysql-cleanupall.sh ###
 Usage:<br>
-<b>shell></b>mysql-cleanupall.sh \<LIMIT> \<DIRECTORY>
+<pre><b>shell></b>mysql-cleanupall.sh &ltLIMIT&gt &ltDIRECTORY&gt</pre>
 
 **Examples:**<br>
 *using the relative path:*
@@ -78,7 +78,7 @@ To delete a file, use the command crontab -r<br>
 To edit: crontab -e<br>
 ### xen-backup.sh ###
 Usage:<br>
-<b>shell></b>xen-backupall.sh \<DIRECTORY>
+<pre><b>shell></b>xen-backupall.sh &ltDIRECTORY&gt</pre>
 <br><br>
 Documentation is currently in progress — thanks for your patience.
 
