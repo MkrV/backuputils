@@ -14,6 +14,8 @@
 LIMIT="$1"
 DIR=${2%/}
 BASEDIR=$(dirname $0)
+USER=root
+PASSWORD=
 
 if [[ -z "$LIMIT" ]]; then
   echo "No limit defined!${USAGE}"
@@ -36,7 +38,7 @@ if [ ! -d $DIR ]; then
 fi
 
 # List the databases
-DATABASES=$(mysql --user=${USER} --password=${PASS} -Bse 'show databases')
+DATABASES=$(mysql --user=${USER} --password=${PASSWORD} -Bse 'show databases')
 
 for DATABASE in $DATABASES; do
   sh $BASEDIR/cleanup.sh $LIMIT $DATABASE $DIRECTORY
