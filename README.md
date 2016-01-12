@@ -70,7 +70,7 @@ Usage:<br>
 
 ### cron.d ###
 ```
-01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dbdump
+01 04 * * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
 ```
 The above example will run /home/$USER/backuputils/mysql-backupall.sh at 4:01am on every day of every month. 
 ```
