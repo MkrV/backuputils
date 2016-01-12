@@ -75,7 +75,7 @@ run both the scripts once a day
 * * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 <b>shell></b>crontab /home/$USER/backuputils/cronbackupdb<br>
-Check if the script added:<br>
+Check if the script is added:<br>
 <b>shell></b>crontab -u $USER -l
 To delete a file, use the command crontab -r
 To edit: crontab -e
