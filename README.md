@@ -19,8 +19,7 @@ mysql>GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypas
 ```
 if you will run the script not as root user, then change the USER in mysql-backupall.sh:<br>
 USER=<nobr>~~root~~<br>
-USER=jeffrey
-
+<pre>USER=jeffrey</pre>
 set the PASSWORD value, for example:
 ```
 PASSWORD=mytemporarypassword
@@ -28,8 +27,7 @@ PASSWORD=mytemporarypassword
 do not copy the example, set your own PASSWORD
 
 **Usage:**<br>
-
-<b>shell></b>mysql-backupall.sh \<DIRECTORY>
+<b>shell></b>mysql-backupall.sh <DIRECTORY>
 
 **Examples:**<br>
 *using the relative path:*
@@ -42,7 +40,6 @@ do not copy the example, set your own PASSWORD
 ```
 ### cleanup.sh ###
 **Usage:**<br>
-
 <b>shell></b>cleanup.sh \<LIMIT> \<BASENAME> \<DIRECTORY>
 
 **Examples:**<br>
