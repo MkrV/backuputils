@@ -75,9 +75,9 @@ run both the scripts once a day
 * * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 Add the commands to the cron:<br>
-<b>shell></b>crontab /home/$USER/backuputils/cronbackupdb<br>
+<b>shell></b>crontab /home/$USER/backuputils/cronbackupdb<br><br>
 Check if the script is added:<br>
-<b>shell></b>crontab -u $USER -l<br>
+<b>shell></b>crontab -u $USER -l<br><br>
 To delete a file, use the command crontab -r<br>
 To edit: crontab -e<br>
 ### xen-backup.sh ###
