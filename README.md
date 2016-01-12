@@ -76,9 +76,9 @@ run both the scripts once a day
 ```
 <b>shell></b>crontab /home/$USER/backuputils/cronbackupdb<br>
 Check if the script is added:<br>
-<b>shell></b>crontab -u $USER -l
-To delete a file, use the command crontab -r
-To edit: crontab -e
+<b>shell></b>crontab -u $USER -l<br>
+To delete a file, use the command crontab -r<br>
+To edit: crontab -e<br>
 ### xen-backup.sh ###
 Usage:<br>
 <b>shell></b>xen-backupall.sh \<DIRECTORY>
