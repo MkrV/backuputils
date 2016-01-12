@@ -61,7 +61,7 @@ Usage:<br>
 **Examples:**<br>
 *using the relative path:*
 ```
-./mysql-cleanupall.sh 5 mydb.sql ~/dirWithDumps
+./mysql-cleanupall.sh 5 ~/dirWithDumps
 ```
 *using the absloute path:*
 ```
