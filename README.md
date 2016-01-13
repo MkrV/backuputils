@@ -18,7 +18,7 @@ mysql>CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 mysql>GRANT SELECT ON *.* TO 'jeffrey'@'localhost' IDENTIFIED BY 'mytemporarypassword';
 ```
 if you will run the script not as root user, then change the USER in mysql-backupall.sh:<br>
-USER=<nobr>~~root~~<br>
+`USER=`<nobr>~~root~~<br>
 <pre>USER=jeffrey</pre>
 set the PASSWORD value, for example:
 ```
@@ -64,11 +64,10 @@ Usage:<br>
 /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 
-Add a new cronjob to /etc/cron.d:
-
+Add a new cronjob to `/etc/cron.d`:
+```
 # /etc/cron.d/zeyos-backuputils
 # Updates the authorized_keys every day
-```
 0 0 * * *   root   /opt/backuputils/mysql-backupall.sh ~/dirWithDumps
 0 0 * * *   root   /opt/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
