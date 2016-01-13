@@ -15,6 +15,7 @@ On the linux machines, check out the repository to the `/opt` directoy.
 ```
 cd /opt/
 git clone https://github.com/MkrV/backuputils.git
+mkdir /opt/backuputils/dumps
 ```
 
 Ensure that the scripts can be executed
@@ -26,8 +27,8 @@ Add a new cronjob to `/etc/cron.d`:
 ```
 # /etc/cron.d/zeyos-backuputils
 # Updates the authorized_keys every day
-0 0 * * *   root   /opt/backuputils/mysql-backupall.sh ~/dirWithDumps
-0 0 * * *   root   /opt/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
+0 0 * * *   root   /opt/backuputils/mysql-backupall.sh ~/dumps
+0 0 * * *   root   /opt/backuputils/mysql-cleanupall.sh 5 /opt/backuputils/dumps
 ```
 Scripts
 ------
@@ -51,23 +52,24 @@ do not copy the example, set your own PASSWORD
 <pre><b>shell></b>mysql-backupall.sh &ltDIRECTORY&gt</pre>
 **Example:**<br>
 ```
-/opt/backuputils/mysql-backupall.sh  /home/$USER/dirForDumps
+/opt/backuputils/mysql-backupall.sh  /opt/backuputils/dumps
+```
+### mysql-cleanupall.sh ###
+**Usage:**<br>
+<pre><b>shell></b>mysql-cleanupall.sh &ltLIMIT&gt &ltDIRECTORY&gt</pre>
+
+**Example:**<br>
+```
+/opt/backuputils/mysql-cleanupall.sh 5 /opt/backuputils/dumps
 ```
 ### cleanup.sh ###
+
 **Usage:**<br>
 <pre><b>shell></b>cleanup.sh &ltLIMIT&gt &ltBASENAME&gt &ltDIRECTORY&gt</pre>
 
 **Example:**<br>
 ```
-/opt/backuputils/cleanup.sh 5 mydb.sql /home/$USER/dirWithDumps
-```
-### mysql-cleanupall.sh ###
-Usage:<br>
-<pre><b>shell></b>mysql-cleanupall.sh &ltLIMIT&gt &ltDIRECTORY&gt</pre>
-
-**Example:**<br>
-```
-/opt/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
+/opt/backuputils/cleanup.sh 5 mydb.sql /opt/backuputils/dumps
 ```
 ### xen-backup.sh ###
 Usage:<br>
