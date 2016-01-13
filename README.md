@@ -64,18 +64,14 @@ Usage:<br>
 /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
 
-###  cronbackupdb ###
-run both the scripts once a day 
+Add a new cronjob to /etc/cron.d:
+
+# /etc/cron.d/zeyos-backuputils
+# Updates the authorized_keys every day
 ```
-* * /1 * * /home/$USER/backuputils/mysql-backupall.sh ~/dirWithDumps
-* * /1 * * /home/$USER/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
+0 0 * * *   root   /opt/backuputils/mysql-backupall.sh ~/dirWithDumps
+0 0 * * *   root   /opt/backuputils/mysql-cleanupall.sh 5 /home/$USER/dirWithDumps
 ```
-Add the commands to the cron:<br>
-<pre><b>shell></b>crontab /home/$USER/backuputils/cronbackupdb</pre>
-Check if the script is added:<br>
-<pre><b>shell></b>crontab -u $USER -l</pre>
-To delete a file, use the command crontab -r<br>
-To edit: crontab -e<br>
 ### xen-backup.sh ###
 Usage:<br>
 <pre><b>shell></b>xen-backupall.sh &ltDIRECTORY&gt</pre>
