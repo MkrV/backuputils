@@ -55,6 +55,9 @@ do not copy the example, set your own PASSWORD
 /opt/backuputils/mysql-backupall.sh  /opt/backuputils/dumps
 ```
 ### mysql-cleanupall.sh ###
+You could use mysql-cleanupall.sh script if you want to keep equal count of dumps of each databases.<br>
+The mysql-cleanupall.sh script call internally the cleanup.sh.<br> 
+
 **Usage:**<br>
 <pre><b>shell></b>mysql-cleanupall.sh &ltLIMIT&gt &ltDIRECTORY&gt</pre>
 
@@ -63,6 +66,8 @@ do not copy the example, set your own PASSWORD
 /opt/backuputils/mysql-cleanupall.sh 5 /opt/backuputils/dumps
 ```
 ### cleanup.sh ###
+You could use cleanup.sh script if you want to decrease the count of dumps of the selected database.<br>
+The cleanup.sh used internally in the mysql-cleanupall.sh.<br> 
 
 **Usage:**<br>
 <pre><b>shell></b>cleanup.sh &ltLIMIT&gt &ltBASENAME&gt &ltDIRECTORY&gt</pre>
